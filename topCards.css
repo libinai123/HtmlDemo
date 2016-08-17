@@ -1,0 +1,71 @@
+@charset "utf-8";
+body{
+	background-color: #F2F2F2;
+}
+.headerCon{
+	background-color: #fff;
+}
+.topList{
+	margin-top:25px;
+	margin-right: 24px;
+	margin-left: 24px;
+	position:absolute;
+	bottom:107px;
+	left:0;
+	top:0;
+	overflow-y:auto;
+}
+.topList li{
+	float: left;
+	width:284px;
+	height:170px;
+	line-height:170px;
+	box-sizing: border-box;
+	margin-bottom:29px;
+	text-align: center;
+	font-size:32px;
+	color: #000;
+	white-space: nowrap;
+    background:url(../images/cardbg.png) no-repeat center center;
+	font-size:50px;
+	color:white;
+	font-weight:bold;
+	position:relative;
+}
+.topList li .danwei{
+ font-size:25px;
+}
+.topList li:nth-child(odd){
+  margin-right:18px;
+}
+.topList li .mengban{
+    position:absolute;
+	width:284px;
+	height:170px;
+	background:url(../images/block50.png);
+	z-index:100;
+	top:0;
+	border-radius:15px;
+	display:none;
+}
+.topList li .mengban img{
+width:44px;
+height:44px;
+position:absolute;
+right:23px;
+top:23px;
+}
+#tijiaoCon{
+bottom:23px;
+position:absolute;
+}
+#tijiaoCon #tjBtn{
+width:594px;
+height:84px;
+background:#000;
+color:white;
+line-height:84px;
+font-size:28px;
+text-align:center;
+margin-left:23px;
+}

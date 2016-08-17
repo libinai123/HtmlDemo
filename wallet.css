@@ -1,0 +1,24 @@
+@charset="utf-8";
+body{
+	background-color: #f2f2f2;
+}
+.walletList{
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+.walletList li{
+	margin-left: 30px;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 87px;
+}
+.walletList li a{
+	font-size: 30px;
+	color: #282828;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../images/right_jt.png) no-repeat 563px center;
+}
+.walletList li:last-child{
+	border-bottom: 0;
+}

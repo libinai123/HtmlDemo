@@ -1,0 +1,129 @@
+@charset "utf-8";
+body{
+	background-color: #F2F2F2;
+}
+.headerCon{
+	background-color: #fff;
+}
+.shaiDan{
+	/*margin-top:90px;*/
+}
+.tabList{
+	width:100%;
+	height: 88px;
+	overflow: hidden;
+	line-height: 87px;
+	background-color: #fff;
+	border-bottom: 1px solid #E5E5E5;
+}
+.tabList li{
+	width:50%;
+	height:100%;
+	float: left;
+	text-align: center;
+	font-size:28px;
+	color: #666;
+}
+.tabList li.active{
+	color: #B9A05D;
+	border-bottom: 4px solid #B9A05D;
+	height:87px;
+}
+/*晒单内容*/
+.tabContent{
+	margin-top:26px;
+}
+ul.dp{
+	display: none;
+}
+ul.sd{
+	margin-right: 24px;
+	margin-left: 24px;
+}
+ul.sd li{
+	background-color: #fff;
+	width:100%;
+	height: auto;
+	margin-bottom: 10px;
+	padding-bottom:18.5px;
+}
+/*晒单人的头像信息*/
+.sdInfo{
+	padding-top: 24px;
+	margin-bottom: 20px;
+}
+.sdInfo .sdTx{
+	width:70px;
+	height:70px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	margin-left: 24px;
+	margin-right: 20px;
+}
+.sdInfo div.fl p:first-child{
+	font-size: 26px;
+	color: #000;
+}
+.sdInfo div.fl p:last-child{
+	font-size: 24px;
+	color: #999;
+}
+.sdTp{
+	width:544px;
+	height:auto;
+	margin:0 auto;
+}
+.sdTp img{
+	width: 100%;
+	height: auto;
+}
+.tpTitle{
+	margin-left:24px;
+	width:471px;
+	height: auto;
+	margin-top:13.5px;
+}
+.tpTitle p:first-child{
+	font-size: 28px;
+	color: #000;
+	line-height: 43px;
+	white-space: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.tpTitle p:nth-child(2) span{
+	float: left;
+	display: block;
+	line-height: 36px;
+}
+.tpTitle p:nth-child(2) span:first-child{
+	font-size: 24px;
+	color: #000;
+	margin-right: 24px;
+}
+.tpTitle p:nth-child(2) span:nth-child(2){
+	/*width:71px;
+	height:36px;*/
+	font-size: 22px;
+	color: #fff;
+	background-color: #B9A05D;
+	padding:0 2px;
+	margin-right: 12px;
+	/*background:url(../images/hyj.jpg) no-repeat center center;*/
+}
+.tpTitle p:nth-child(2) span:nth-child(3){
+	font-size: 28px;
+	color: #B9A05D;
+}
+.tpShare{
+	margin-right: 24px;
+	width:73px;
+	height:34px;
+	border-left:1px solid #999999;
+	box-sizing: border-box;
+	margin-top:35.8px;
+	background:url(../images/addCartHui.png) no-repeat center center;
+}
+.tpShare:active{
+	background:url(../images/addCartHua.png) no-repeat center center;
+}

@@ -1,0 +1,74 @@
+@charset="utf-8";
+body{
+	background-color: #f2f2f2;
+}
+.refund li{
+	padding-left: 21px;
+	padding-top:29px;
+	margin-bottom: 19px;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+.refund li .left{
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin-right: 22px;
+}
+.refund li .right {
+	width: 457px;
+	height: 140px;
+	overflow: hidden;
+}
+.refund li .right p:nth-child(1){
+	font-size: 28px;
+	color: #000;
+	font-weight: bold;
+	line-height: 38px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.refund li .right p:nth-child(2){
+	font-size: 24px;
+	color: #999;
+	margin-top:3px;
+	line-height:36px ;
+}
+.refund li .right p:nth-child(2) span:nth-child(1){
+	margin-right: 35px;
+}
+.refund li .right p:nth-child(3){
+	font-size: 24px;
+	color: #999;
+	line-height:36px ;
+}
+.refund li .right p:nth-child(4){
+	font-size: 24px;
+	color: #b9a05d;
+}
+.refund li .right p:nth-child(4) span:nth-child(1){
+	padding-left: 21px;
+	background: url(../images/doll.png) no-repeat left center;
+}
+.refund li .right p:nth-child(4) span:nth-child(2){
+	margin-right:29px ;
+}
+.refund .bottomInfo{
+	margin-top:29px;
+	line-height: 69px;
+	border-top: 1px solid #e5e5e5;
+}
+.refund .bottomInfo p{
+	float: left;
+	font-size: 24px;
+	color: #999;
+}
+.refund .bottomInfo p:nth-child(1){
+	font-size: 26px;
+	color: #b9a05d;
+	margin-right: 85px;
+}
+.refund .bottomInfo p:nth-child(2){
+	margin-right: 24px;
+}

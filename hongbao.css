@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background:#fffef2;
+}
+#hbimgCon{
+width:100%;
+height:543px;
+background:url(../images/hongbao.jpg) no-repeat center center;
+position:relative;
+}
+.fxTitle{
+font-size:26px;
+text-align:center;
+margin-top:10px;
+}
+.fxContent{
+font-size:32px;
+text-align:center;
+margin-top:20px;
+}
+.shareBtn{
+background:#000;
+width:460px;
+height:83px;
+line-height:83px;
+text-align:center;
+color:white;
+font-size:30px;
+margin:0 auto;
+margin-top:50px;
+}
+#hbimgCon p{
+position:absolute;
+line-height:80px;
+color:#999;
+height:80px;
+width:150px;
+right:0;
+text-align:center;
+}

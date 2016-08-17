@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contentcenter{
+bottom:86px;
+}
+.bottombtn{
+position:fixed;
+bottom:0;
+width:640px;
+height:86px;
+line-height:86px;
+font-size:30px;
+color:white;
+text-align:center;
+background:#000;
+}
+
+.changeAddress{
+margin-top:40px;
+}
+.changeAddress li {
+    margin-bottom: 35px;
+	width:640px;
+	height:72px;
+}
+
+.changeAddress li .label{
+    font-size: 26px;
+    color: #373737;
+	line-height:72px;
+	height:72px;
+	width:170px;
+	float:left;
+	color:#373737;
+	text-align:right;
+}
+.changeAddress li .shurukaung{
+    width: 445px;
+    height: 72px;
+	float:left;
+}
+.changeAddress li .shurukaung input,.changeAddress li .shurukaung select{
+	width: 445px;
+    height: 72px;
+	line-height:72px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    clear: both;
+    background: white;
+    font-size: 28px;
+    color: #373737;
+	padding-left:15px;
+
+}
+.changeAddress li .shurukaung p{
+	width: 445px;
+    height: 72px;
+	line-height:72px;
+    font-size: 28px;
+    color: #373737;
+	padding-left:15px;
+	background:url(../images/circle.png) no-repeat left center;
+	padding-left:50px;
+}

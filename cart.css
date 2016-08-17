@@ -1,0 +1,189 @@
+@charset='utf-8';
+body{
+	background-color: #f2f2f2;
+}
+.cartList{
+	background-color: #fff;
+	margin-bottom: 207px;
+}
+.cartList li{
+	width: 100%;
+	height: 201px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.cartList li div.leftIcon,.cartList li div.cenImg,.cartList li div.rightCon{
+	margin-top:23px;
+}
+.cartList li .leftIcon{
+	width: 83px;
+	height:176px;
+}
+.cartList li .leftIcon.unselect{
+	background:url(../images/unselectico.png) no-repeat center center;
+}
+.cartList li .leftIcon.select{
+	background:url(../images/circlehover.png) no-repeat center center;
+}
+.cartList li .cenImg{
+	width:152px;
+	height:152px;
+	margin-right: 12px;
+}
+.ver_pic{
+	width:152px;
+	height:152px;
+	background-color:#f2f2f2;
+	text-align:center;
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+}
+.ver_pic .subpic{
+	*position:absolute;
+	top:50%;
+	left:50%;
+}
+.ver_pic .subpic img{
+	*position:relative;
+	top:-50%;
+	left:-50%;
+}
+.cartList li .cenImg img{
+	width: 100%;
+	height: 100%;
+}
+.cartList li .rightCon{
+	width: 393px;
+	height: 154px;
+}
+.cartList .rightCon p:nth-child(1){
+	font-size: 27px;
+	line-height: 28px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.cartList .rightCon .guige{
+	font-size: 23px;
+	color: #999;
+	line-height: 26px;
+	margin:6px 0;
+}
+.cartList .rightCon p:nth-child(2) span:nth-child(1){
+	margin-right: 35px;
+}
+.price{
+	line-height: 44px;
+    font-size: 24px;
+    color: #b9a05d;
+}
+.price span:nth-child(1){
+	color: #000;
+	margin-right: 35px;
+}
+.cartList .rightCon div:nth-child(4){
+	width: 100%;
+	height: 44px;
+}
+.cartList .num{
+	width: 146px;
+    height: 44px;
+    border: 1px solid #c5c5c5;
+    box-sizing: border-box;
+    /*margin-left: 15px;*/
+}
+.num button{
+	width: 42px;
+    height: 40px;
+    border: none;
+    background: url(../images/addIncream.png) no-repeat;
+}
+.num button.add{
+    background-position: -44px 0px;
+}
+.num button.increse{
+	background-position: 0px 0px;
+}
+.num input{
+	width: 58px;
+    height: 41px;
+    border: none;
+    color: #333;
+    font-size: 26px;
+    border-left: 1px solid #C5C5C5;
+    border-right: 1px solid #C5C5C5;
+    text-align: center;
+}
+/*.lastCon p:nth-child(1){
+	line-height: 44px !important;
+	padding-left: 23px;
+	font-size: 24px !important;
+	color: #b9a05d !important;
+
+}*/
+.delBtn{
+	width: 120px;
+	height: 44px;
+	background:url(../images/del.png) no-repeat center center;
+}
+/*------------底部内容------------*/
+.bottomCom{
+	width: 100%;
+	height: 99px;
+	border-top:1px solid #e5e5e5;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.bottomCom div:nth-child(1){
+	width: ;
+	height: 99px;
+	overflow: hidden;
+}
+.bottomCom div:nth-child(1) div:nth-child(1){
+	width: 83px;
+	height: 99px;
+}
+.bottomCom div:nth-child(1) div:nth-child(1).allSelect{
+	background:url(../images/selectico.png) no-repeat center center;
+}
+.bottomCom div:nth-child(1) div:nth-child(1).allDelet{
+	background:url(../images/unselectico.png) no-repeat center center;
+}
+.bottomCom div:nth-child(1) p:nth-child(2){
+	line-height: 99px;
+	font-size: 28px;
+}
+.bottomCom .settleBtn{
+	width:173px ;
+	height: 68px;
+	background-color: #000;
+	margin-right:24px ;
+	margin-left: 24px;
+	margin-top:15px;
+	text-align: center;
+}
+.bottomCom .settleBtn span{
+	font-size:28px ;
+	color: #fff;
+	line-height: 68px;
+}
+.bottomCom .centerText{
+	margin-top:8px;
+}
+.bottomCom .centerText p{
+  font-size: 26px;
+  color: #000;
+  line-height: 41px;
+  text-align: right;
+}
+.bottomCom .centerText p span{
+	color: #b9a05d;
+}
+/*.bottomCom .centerText p:nth-child(2){
+	font-size: 22px;
+	color: #999999;
+	line-height: 30px;
+}*/

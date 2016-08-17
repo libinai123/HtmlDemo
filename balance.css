@@ -1,0 +1,124 @@
+@charset "utf-8";
+/*------头部右侧------*/
+.topUp{
+	font-size: 30px;
+	color: #000;
+	line-height:90px;
+	font-family: "黑体-繁";
+	position: absolute;
+	right: 30px;
+	top: 0px;
+	text-align: right;
+}
+.balance{
+	/*margin-top: 90px;*/
+}
+.hrefList{
+	margin:21px 0 10px 0;
+}
+.hrefList a{
+	font-size: 26px;
+	color: #999;
+	line-height: 34px;
+	position: relative;
+	border-right: 1px solid #999;
+	padding:0 10px;
+}
+.hrefList a:nth-child(1){
+	border-right:0;
+}
+.hrefList em{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 13px;
+	margin-bottom:2px;
+	background:url(../images/proBg.png) no-repeat center center;
+}
+.banQ{
+	/*金额 需要设置不要超出背景*/
+	width:288px;
+	height: 288px;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	background:url(../images/balanqbg.png) no-repeat center center;
+	margin: 0 auto;
+	line-height: 288px;
+}
+.banQ span{
+	position: relative;
+	top: 10px;
+	left: 19px;
+	width: 250px;
+	height: 260px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+.banY{
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	line-height: 86px;
+	margin-bottom: 55px;
+}
+.baMx{
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+}
+.baMx em{
+	position: absolute;
+	font-size: 26px;
+	color: #858585;
+	top: -17.5px;
+	background-color: #fff;
+	padding:0 24px;
+	left: 244px;
+}
+.deList{
+	margin-top:30px;
+
+}
+.deList li{
+	padding:0 24px;
+	height: 87px;
+	line-height: 87px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.deList li span{
+	float: left;
+	font-size: 28px;
+}
+.deList li.add .normal{
+	/*充值的样式*/
+	color: #B9A05D;
+}
+.deList li.reduce .normal{
+	/*消费的样式*/
+	color: #000;
+}
+.deList li span:nth-child(3){
+	margin:0 30px 0 13px;
+}
+.deList li span:nth-child(3){
+	color: #000;
+}
+.deList li span:nth-child(4){
+	float: right;
+	font-size:26px ;
+	color: #999;
+}
+/*积分规则*/
+.inteList li span:nth-child(2){
+	/*设置积分宽度防止过长*/
+	width: ;
+}
+.inteList li span:nth-child(3){
+	/*设置增加积分项宽度,防止过长*/
+	width: ;
+}
+.normal{
+	color: #B9A05D;
+}

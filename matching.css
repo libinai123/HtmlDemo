@@ -1,0 +1,250 @@
+*{
+-webkit-overflow-scrolling: touch;
+}
+body {
+	height: 100%;
+	background-color: #f2f2f2;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+/*-----轮播图-----*/
+
+.slideBox {
+	position: relative;
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+}
+
+.slideBox .hd {
+	position: absolute;
+	height: 14px;
+	line-height: 14px;
+	bottom: 28px;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+}
+
+.slideBox .hd ul li {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0 7.5px;
+	border: 1px solid #eaeaea;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.slideBox .hd ul li.on {
+	background: #b9a05d;
+	border: none;
+	width: 16px;
+	height: 16px;
+}
+
+.slideBox .bd {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+}
+
+.slideBox .bd li {
+	position: relative;
+}
+
+.slideBox .bd li a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.slideBox .bd li img {
+	width: 100%;
+	height: 320px;
+	display: block;
+	vertical-align: top;
+}
+
+.matching-icon {
+	width: 100px;
+	height: 100px;
+	background: url(../images/matching-icon.png) 0px 0px no-repeat;
+	display: block;
+}
+
+.matching-menu {
+	overflow: hidden;
+	padding: 20px 0px 12px 0px;
+	background-color: #FFFFFF;
+}
+
+.matching-menu li a {
+	float: left;
+	text-align: center;
+	margin-left: 50px;
+	color: #000000;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.matching-menu li:nth-child(2) .matching-icon {
+	background-position: -103px 0px;
+}
+
+.matching-menu li:nth-child(3) .matching-icon {
+	background-position: -206px 0px;
+}
+
+.matching-menu li:nth-child(4) .matching-icon {
+	background-position: -309px 0px;
+}
+
+.matching-type li {
+	margin-top: 20px;
+}
+
+
+/******* 新品展示列表 ********/
+.matching-list{
+	margin: 5px 0px;
+	overflow: hidden;
+}
+.matching-list,
+.matching-list a {
+	font-size: 26px;
+	color: #000000;
+	line-height: 40px;
+	
+}
+
+.matching-list dt {
+	height: 56px;
+	line-height: 56px;
+	font-weight: bolder;
+}
+
+.matching-list dt span {
+	font-size: 28px;
+	margin: 0px 10px 0px 20px;
+}
+
+.matching-list a {
+	width: 315px;
+	height: 496px;
+	padding: 30px 26px;
+	background-color: #FFFFFF;
+	float: left;
+	margin: 5px 0px;
+}
+
+.matching-list dd:nth-child(2n) a {
+	margin-right: 10px;
+}
+.matching-list li:nth-child(2n) a {
+	margin-left: 10px;
+}
+.matching-list .title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.matching-list img {
+	margin-bottom: 8px;
+}
+
+.matching-list .price {
+	font-size: 24px;
+}
+
+.matching-list .price span {
+	font-size: 21px;
+	color: #FFFFFF;
+	background-color: #b9a05d;
+}
+
+.colorb9a05d {
+	color: #b9a05d;
+}
+#topCon{
+height:90px;
+width:640px;
+}
+#topCon .ltmenu{
+width:70px;
+height:90px;
+background:url(../images/ltMenu.png) no-repeat center center;
+float:left;
+position:relative;
+}
+#topCon .searchCon{
+width:550px;
+height:56px;
+float:left;
+border:1px solid #e5e5e5;
+background:white;
+border-radius:8px;
+margin-top:16px;
+}
+#topCon .searchCon #searchInput{
+width:490px;
+height:56px;
+line-height:56px;
+float:left;
+padding-left:10px;
+}
+#topCon .searchCon #searchBtn{
+width:56px;
+height:56px;
+background:url(../images/fdj.png) no-repeat center center;
+float:left;
+}
+#menuCon{
+position:fixed;
+top:90px;
+left:0;
+width:100%;
+bottom:0;
+z-index:1000;
+background:url(../images/mt0.png);
+display:none;
+}
+#menuMain{
+position:fixed;
+top:90px;
+left:0;
+width:72%;
+bottom:0;
+z-index:2000;
+background:url(../images/block98.png);
+display:none;
+}
+#menuMain ul li{
+width:100%;
+height:105px;
+background:url(../images/rt.png) no-repeat 400px center;
+}
+#menuMain ul li p{
+height:105px;
+line-height:105px;
+color:white;
+font-size:28px;
+padding-left:73px;
+}
+#menuMain ul li:nth-child(1) p{
+background:url(../images/mendian.png) no-repeat 20px center;
+}
+#menuMain ul li:nth-child(2) p{
+background:url(../images/aboutico.png) no-repeat 20px center;
+}
+#menuMain ul li:nth-child(3) p{
+background:url(../images/shareico.png) no-repeat 20px center;
+}
+#menuMain ul li:nth-child(4) p{
+background:url(../images/Bubbles.png) no-repeat 20px center;
+}
+#menuMain ul li:nth-child(5) p{
+background:url(../images/End-call.png) no-repeat 20px center;
+}

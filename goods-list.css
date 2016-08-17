@@ -1,0 +1,70 @@
+.menu {
+	width: 150px;
+}
+
+.menu a {
+	width: 170px;
+	height: 88px;
+	line-height: 88px;
+	border-bottom: 1px solid #e5e5e5;
+	display: block;
+	padding: 0px 25px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.menu .angles-icon {
+	width: 21px;
+	height: 12px;
+	background: url(../images/angles-icon.png) no-repeat;
+	display: block;
+	margin-top: 40px;
+}
+
+.menu .action .angles-icon {
+	background-position: -21px 0px;
+}
+
+.menu .action {
+	color: #b9a05d;
+	border-left: 6px solid #b9a05d;
+	padding-left: 19px;
+}
+
+.menu .menu-child a {
+	border-left: 0px;
+	color: #999999;
+	background-color: inherit;
+	padding-left: 28px;
+	height: 73px;
+	line-height: 73px;
+}
+
+.menu .menu-child .action {
+	color: #b9a05d;
+	padding-left: 25px;
+}
+
+.goods-con {
+	width: 490px;
+}
+
+.goods-con.matching-list {
+	margin: 5px;
+}
+
+.goods-con .matching-list a {
+	width: 230px;
+	height: 318px;
+	padding: 20px 23px;
+	line-height: 30px;
+	margin: 5px;
+}
+
+.goods-con .matching-list .price {
+	font-size: 22px;
+}
+
+.matching-list .price span {
+	font-size: 18px;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background:#f2f2f2;
+}
+.selectList{
+background:white;
+}
+.selectList li{
+width:100%;
+height:90px;
+line-height:90px;
+font-size:30px;
+border-bottom:1px solid #e5e5e5;
+}
+.selectList  li.unselect{
+background:url(../images/unselectico.png) no-repeat 25px center;
+}
+.selectList  li.select{
+background:url(../images/cm_select.png) no-repeat 25px center;
+}
+.selectList li p{
+float:left;
+margin-left:100px;
+}
+.selectList li input{
+float:left;
+margin-left:20px;
+height:90px;
+line-height:90px;
+}
+.confirmBtn{
+	position: fixed;
+    left: 24px;
+    bottom: 30px;
+    width: 592px;
+    height: 80px;
+    font-size: 30px;
+    left: 24px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    background-color: #000;
+}

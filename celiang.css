@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+background:#f2f2f2;
+}
+#topClass{
+width:100%;
+height:90px;
+position:absolute;
+top:0;
+background:#fff;
+}
+#topClass{
+border-bottom:1px solid #e5e5e5;
+}
+#topClass  li{
+width:25%;
+height:90px;
+float:left;
+text-align:center;
+line-height:90px;
+font-size:28px;
+}
+#topClass  li.active{
+border-bottom:4px solid #b9a05d;
+}
+#contentCon{
+position:absolute;
+top:90px;
+bottom:107px;
+width:100%;
+
+}
+#bmCon{
+width:100%;
+height:107px;
+bottom:0;
+position:absolute
+}
+#bmCon p{
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    width: 296px;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#bmCon p.l_btn{
+	margin-left:23px;
+	float:left;
+}
+#bmCon p.r_btn{
+	margin-right:23px;
+	float:right;
+}
+#contentCon ul li{
+width:100%;
+height:90px;
+background:url(../images/rbtnico.png) no-repeat 600px center white;
+}
+#contentCon ul li .innerDiv{
+border-bottom:1px solid #e5e5e5;
+margin-left:30px;
+height:90px;
+}
+#contentCon ul li .innerDiv .operationCon{
+width:63px;
+height:90px;
+background:url(../images/cm_unselect.png) no-repeat left center;
+float:left;
+
+}
+#contentCon ul li .innerDiv .select{
+
+background:url(../images/cm_select.png) no-repeat left center;
+
+
+}
+#contentCon ul li .innerDiv .unselect{
+
+background:url(../images/cm_unselect.png) no-repeat left center;
+
+
+}
+#contentCon ul li .innerDiv .titleTxt{
+float:left;
+height:90px;
+line-height:90px;
+float:left;
+font-size:30px;
+}
+#nextStepBtn{
+display:none;
+}

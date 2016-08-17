@@ -1,0 +1,105 @@
+@charset='utf-8';
+body{
+	background:#f2f2f2;
+}
+.settleCon{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	padding-bottom: 115px;
+}
+.settleCon p:nth-child(1){
+	width: 100%;
+	height: 230px;
+}
+.settleSucc p:nth-child(1){
+	background:url(../images/settleSucc.png) no-repeat center bottom;	
+}
+.settleFail p:nth-child(1){
+	background:url(../images/settleFail.png) no-repeat center bottom;	
+}
+.settleCon p:nth-child(2){
+	line-height: 40px;
+	font-size:30px ;
+	color: #333;
+	text-align: center;
+	margin:33px 0 20px 0;
+}
+.settleCon a{
+	display: block;
+	width:173px;
+	margin:0 auto;
+	height: 56px;
+	font-size:28px ;
+	color: #fff;
+	text-align: center;
+	line-height: 56px;
+	background-color: #000; 
+}
+.caiLike{
+	line-height: 66px;
+	font-size:26px ;
+	color: #999;
+	padding-left: 24px;
+}
+.matching-list{
+	margin: 5px 0px;
+	overflow: hidden;
+}
+.matching-list,
+.matching-list a {
+	font-size: 26px;
+	color: #000000;
+	line-height: 40px;
+	
+}
+
+.matching-list dt {
+	height: 56px;
+	line-height: 56px;
+	font-weight: bolder;
+}
+
+.matching-list dt span {
+	font-size: 28px;
+	margin: 0px 10px 0px 20px;
+}
+
+.matching-list a {
+	width: 315px;
+	height: 420px;
+	padding: 30px 26px;
+	background-color: #FFFFFF;
+	float: left;
+	margin: 5px 0px;
+}
+
+.matching-list dd:nth-child(2n) a {
+	margin-right: 10px;
+}
+.matching-list li:nth-child(2n) a {
+	margin-left: 10px;
+}
+.matching-list .title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.matching-list img {
+	margin-bottom: 8px;
+}
+
+.matching-list .price {
+	font-size: 24px;
+}
+
+.matching-list .price span {
+	font-size: 21px;
+	color: #FFFFFF;
+	background-color: #b9a05d;
+}
+
+.colorb9a05d {
+	color: #b9a05d;
+}

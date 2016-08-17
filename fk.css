@@ -1,0 +1,25 @@
+@charset='utf-8';
+.fk{
+	width:592px ;
+	margin:20px 24px 0 24px;
+	height: 334px;
+	border:1px solid #e5e5e5;
+	background-color: #f2f3f4;
+	box-sizing:border-box;
+	/*padding:25px;*/
+	font-size:28px ;
+	color: #999;
+}
+.confirmBtn{
+	position: fixed;
+    left: 24px;
+    bottom: 30px;
+    width: 592px;
+    height: 80px;
+    font-size: 30px;
+    left: 24px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    background-color: #000;
+}

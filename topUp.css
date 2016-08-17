@@ -1,0 +1,226 @@
+@charset "utf-8";
+body{
+	background-color: #f2f2f2;
+}
+.headerCon{
+	background-color: #fff;
+}
+.topUp{
+
+	position: relative;
+}
+.czJe{
+	width:100% ;
+	height: 87px;
+	border-top: 1px solid #e5e5e5;
+	background-color: #fff;
+	font-size: 30px;
+	color: #000;
+	line-height: 85px;
+}
+.czJe p{
+	margin-left: 25px;
+	margin-right: 33px;
+}
+.czJe input {
+	width:420px ;
+	height: 85px;
+	border: none;
+    float:left;
+}
+.setStyle{
+	font-size:26px ;
+	color: #999;
+	line-height: 70px;
+	text-indent: 23px;
+}
+.styleList{
+	background-color: #fff;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.styleList li{
+	margin-left: 23px;
+	margin-right: 23px;
+	border-bottom: 1px solid #E5E5E5;
+	height: 86px;
+	overflow: hidden;
+	line-height: 86px;
+}
+.styleList li:last-child{
+	border-bottom: none;
+}
+.styleList span{
+	float: left;
+}
+.styleList li span:last-child{
+	float: right;
+	width: 42px;
+	height: 42px;
+	position: relative;
+	top: 22px;
+}
+.styleList span.select{
+	background: url(../images/settleBg.png) no-repeat -55px -1px;
+}
+.styleList span.unselect{
+	background: url(../images/settleBg.png) no-repeat -55px -57px;
+}
+.styleList span:first-child{
+	width:42px ;
+	height: 42px;
+	background: url(../images/settleBg.png) no-repeat;
+	position: relative;
+	top: 22px;
+	margin-right: 20px;
+}
+.styleList span.zfb{
+	background-position: -5px -2px;
+}
+.styleList span.wx{
+	background-position: -6px -112px;
+}
+.styleList span.ylk{
+	background-position: -6px -55px;
+}
+.styleList span:nth-child(2){
+	font-size:30px ;
+	color: #000;
+}
+.settleBtn{
+	position: absolute;
+	left: 24px;
+    bottom:200px;
+	width: 592px;
+	height: 80px;
+	font-size:30px ;
+	left: 24px;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+	background-color: #000;
+}
+#moneyValue ul{
+margin-left:25px;
+
+}
+#moneyValue ul li{
+width:135px;
+height:90px;
+line-height:90px;
+text-align:center;
+background:white;
+border:1px solid #b9a05d;
+float:left;
+border-radius:8px;
+margin-right:15px;
+margin-top:25px;
+color:#b9a05d;
+font-size:25px;
+}
+#moneyValue ul li.active{
+background:#b9a05d;
+color:white;
+}
+.yueCon{
+width:100%;
+height:90px;
+background:white;
+font-size:30px;
+}
+.yueCon .l_txt{
+width:25%;
+height:90px;
+line-height:90px;
+float:left;
+padding-left:85px;
+background:url(../images/yuezfico.png) no-repeat 28px center;
+}
+.yueCon .r_txt{
+width:75%;
+height:90px;
+line-height:90px;
+float:right;
+text-align:center;
+color:#b9a05d;
+font-size:25px;
+text-align:right;
+
+}
+.yueCon .r_txt .myli{
+    float: right;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    top: 22px;
+	margin-right:25px;
+	
+}
+.yueCon .r_txt .unselect{
+        background: url(../images/settleBg.png) no-repeat -55px -57px;
+}
+.yueCon .r_txt .select{
+        background: url(../images/settleBg.png) no-repeat -55px -1px;
+}
+#mengban{
+position:absolute;
+z-index:1000;
+top:0;
+left:0;
+bottom:0;
+width:100%;
+background:url(../images/block40.png);
+display:none;
+}
+#memberCon{
+position:absolute;
+z-index:1002;
+width:542px;
+height:457px;
+left:49px;
+background:white;
+top:200px;
+display:none;
+}
+#closeBtn{
+position:absolute;
+top:0;
+right:0;
+width:97px;
+height:97px;
+background:url(../images/closepageBtn.png) no-repeat center center;
+}
+#memberCon .imgCon{
+width:100%;
+height:170px;
+background:url(../images/zuanshiico.png) no-repeat center center;
+}
+#memberCon .txt{
+font-size:26px;
+color:#b9a05d;
+text-align:center;
+margin-top:10px;
+padding-left:25px;
+padding-right:25px;
+}
+#memberCon .hyBtn{
+width:480px;
+height:75px;
+background:#000;
+color:#fff;
+text-align:center;
+font-size:30px;
+line-height:75px;
+margin-left:31px;
+margin-top:25px;
+}
+.mytest{
+text-align:center;
+margin-top:50px;
+font-size:25px;
+text-decoration:underline;
+color:red;
+}
+.mytest a{
+color:#b9a05d;
+}

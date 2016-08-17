@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+.header .right_Txt{
+width:80px;
+height:85px;
+line-height:85px;
+float:left;
+font-size:25px;
+}
+.header .right_Txt a{
+	color:#808080;
+}
+.manageAddressList li{
+height:210px;
+width:640px;
+margin-bottom:24px;
+background:white;
+border-bottom:2px solid #e6e6e6;
+border-top:2px solid #e6e6e6;
+}
+
+.manageAddressList li .manageAddressTop{
+height:145px;
+border-bottom:1px solid #e6e6e6;
+}
+
+.manageAddressList li .xmdh{
+padding-left:50px;
+padding-top:30px;
+font-size:30px;
+}
+
+.manageAddressList li .xmdh ._name{
+
+float:left;
+}
+.manageAddressList li .xmdh .phone{
+float:left;
+margin-left:30px;
+}
+.manageAddressList li .xmdh .mrdzh{
+	float:left;
+	margin-left:24px;
+	color:#b59d5c;
+}
+.desadress{
+padding-left:50px;
+margin-top:20px;
+font-size:24px;
+height:55px;
+overflow:hidden;
+}
+
+.manageAddressList li .manageAddressBottom{
+font-size:26px;
+float:left;
+line-height:65px;
+height:65px;
+
+width:640px;
+}
+.manageAddressList li .manageAddressBottom .setDefault{
+margin-left:50px;
+padding-left:48px;
+float:left;
+background:url(../images/circle.png) no-repeat left center;
+}
+.manageAddressList li .manageAddressBottom  .defico{
+background:url(../images/circle.png) no-repeat left center;
+}
+.manageAddressList li .manageAddressBottom  .deficohover{
+background:url(../images/circlehover.png) no-repeat left center;
+}
+.bianjiBtn{
+float:right;
+margin-right:50px;
+background:url(../images/editico.png) no-repeat left center;
+padding-left:35px;
+}
+.xiugai{
+float:right;
+margin-right:50px;
+background:url(../images/deleteico.png) no-repeat left center;
+padding-left:35px;
+}
+#zanwu{
+width:245px;
+height:510px;
+margin:0 auto;
+margin-top:210px;
+display:none;
+}
+#zanwu img{
+width:202px;
+height:218px;
+margin-left:21.5px;
+}
+#zanwu p{
+width:245px;
+height:62px;
+line-height:62px;
+text-align:center;
+font-size:26px;
+color:#b9a05d;
+border:1px solid #b9a05d;
+border-radius:8px;
+margin-top:20px;
+}
