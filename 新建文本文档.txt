@@ -1,0 +1,5 @@
+'orderNumber':订单号,'amount':金额,'gooodsType':类型,"leixing":支付类型
+
+
+gooodsType:1.card 虚拟卡 2.chongzhi充值卡 3.product商品
+leixing：0：支付宝 1：微信

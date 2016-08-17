@@ -1,0 +1,141 @@
+安卓开发说明：
+
+定制部分：
+选择了刺绣之后，到定制详情界面。
+点立即购买的时候判断是否登录，如果没有登录，跳转到登录界面。
+现在登录是调用下面方法2：jsCall.putString('uid',data.info);给安卓端保存一个uid.安卓端就可以判断uid,如果没有uid或者uid为空，表示没有登录，跳转到登录界面。
+到订单，调用JS：GetorderID(ordernumber)，传递订单号过来，载入：confirmOrder.html页面
+
+
+另外：定制部分如果有二级菜单，显示二级菜单在顶部，无二级菜单直接显示title(可参照IOS版)，价格：只有面料有价格，其他价格都为0.价格分：会员价和普通价格都需要显示。
+
+
+
+
+
+安卓端和H5交互：
+1.关闭登录/注册页
+安卓：jsCall.closePage();
+IOS：bridge.callHandler('closePage', {}, function (response) {
+                log('JS got response', response)
+             })
+2.保存变量
+安卓：jsCall.putString('key',value);
+IOS：connectWebViewJavascriptBridge(function(bridge) {
+                   bridge.callHandler('saveVar', {'key':key,'value':value}, function (response) {
+                        log('JS got response', response)
+                    })
+               });
+3.获取变量
+安卓：jsCall.getString(key);
+IOS： bridge.callHandler('getVar', {'key':key}, function (response) {
+                log('JS got response', response);
+             })
+4.删除变量
+安卓： jsCall.removeData(key);
+IOS：bridge.callHandler('removeVar', {'key':key}, function (response) {
+                log('JS got response', response)
+     })
+5.弹窗
+安卓：jsCall.showDialog(txt);
+IOS: bridge.callHandler('showMessage', {'message': txt}, function (response) {
+                        log('JS got response', response)
+
+
+
+
+
+
+
+
+关于H5页面的嵌入:
+形象搭配:index.html
+个人中心：center.html
+登录界面：login.html
+注册界面：resiger.html
+
+
+需要做的功能：
+1.预约量体（可参考IOS）：定位出当前地点提交，调用安卓的方法：jsCall.yuyue(orderNumber)，传订单号过去给安卓
+2.支付：
+jsCall.goPayPage(orderNumber,amount,gooodsType,leixing);  
+orderNumber表示订单号
+amount表示支付金额
+gooodsType表示支付物品，gooodsType有3个值：一、chongzhi表示充值 二、card表示虚拟卡购买 三、product表示物品
+leixing表示支付类型,0表示支付宝，1表示微信支付
+
+支付成功：调用js函数:paySuccessful()
+支付失败：调用js函数：payFail()
+
+
+
+3.第三方分享
+一、无回调的分享：jsCall.shareProduct(url,img,title);没有回调，只做分享功能，不管是否分享成功
+二、有回调的分享：jsCall.shareCard()仅仅是调起第三方分享
+分享调用：shareSuccess（）
+分享取消或者分享失败调用：shareFailed（）
+jscall.sendShareAddress(url);
+
+
+4.门店地图标识及导航
+jsCall.shopMap(name,a,l);传给了门店名称和经纬度(页面从首页左上角点开，进入门店，再点门店)
+
+
+
+
+///移动端处理//////
+
+移动端:
+1.首页：增加会员和非会员价格  面料详情：调用接口http://bingxu.intplus.com/made/Styles code=108 参数：id (面料ID)   返回的”remark“字段是需要的 
+
+
+2.上门量体：按钮需要添加动画  水波纹特效  Tabbar中间按钮进入：属于无订单预约，直接进入预约状态：调用接口：http://bingxu.intplus.com/made/VolumeAddress   code=101   参数：uid ,address
+若是从订单生成后进入预约：属于有订单预约，调用接口：http://bingxu.intplus.com/api/Order  code=804  参数：order_number, is_voluem:”1”（必须传1） qr_voluem:”1”(必须1) 调用接口成功后 再调用预约。 点击地图上方地址栏：进入选择地址页面，这里进行地理编码  选择市区  然后返回 让定位大头针移动到所编码位置
+
+3.在web端调用支付成功后的回调（所有的支付是统一的）
+  1、如果是goodsType=card   调用:http://bingxu.intplus.com/Made/Virtual  code=103  参数：uid  order_number
+
+  2、goodsType=chongzhi   调用:http://bingxu.intplus.com/Made/Virtual   code=112  参数：uid  order_number
+
+  3、goodsType=（其他商品）  调用:http://bingxu.intplus.com/Made/Order     code=301  参数：uid   order_number
+
+
+4.在web端调起分享功能：分享成功  调用web的”shareSuccess” 方法 在此方法中嵌套 自己注册的‘sendShareAddress’方法 如果触发就分享出去    分享失败后必须回调web失败方法：”shareFail“
+
+5.微信支付：微信支付需要调用，在web支付界面会返回订单号 和 钱数   然后调用接口：http://bingxu.intplus.com/made/Virtual  code=114 参数：order_number    order_money   返回info的信息  就是prepay_id  就可以调起微信支付了
+
+
+
+6.第三方支付分享账号：
+支付宝：PartnerID @"2088121850473094"
+微信： //可支付可分享
+// appID
+#define WXAppID @"wx089980fb6a9ba862"
+//商户秘钥
+#define WXAppKey @"MIICdwIBADANBgkqhkiG9w0BAQEFAASC"
+// 商户号
+#define PartnerID @"1309908201"
+
+// QQ   可分享
+#define QQAPPID @"100424468"
+#define QQAPPKEY @"c7394704798a158208a74ab60104f0ba"
+#define QQURL @"http://www.umeng.com/social"
+
+// 新浪  可分享
+#define SinaAPPKEY @"3921700954"
+#define SinaRedirectURL @"http://sns.whalecloud.com/sina2/callback"
+
+
+
+
+新增加： jsCall.setcateTitle(name);改变分类页标题
+
+
+GetClothInfo(id);获取面料详情
+
+jsCall.goIndex();标准尺码里返回首页
+
+jsCall.getorderIDfunction()调用定制订单，获取订单id
+
+
+

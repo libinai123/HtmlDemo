@@ -1,0 +1,33 @@
+1.关闭登录/注册页
+安卓：jsCall.closePage();
+IOS：bridge.callHandler('closePage', {}, function (response) {
+                log('JS got response', response)
+             })
+2.保存变量
+安卓：jsCall.putString('key',value);
+IOS：connectWebViewJavascriptBridge(function(bridge) {
+                   bridge.callHandler('saveVar', {'key':key,'value':value}, function (response) {
+                        log('JS got response', response)
+                    })
+               });
+3.获取变量
+安卓：jsCall.getString(key);
+IOS： bridge.callHandler('getVar', {'key':key}, function (response) {
+                log('JS got response', response);
+             })
+4.删除变量
+安卓： jsCall.removeData(key);
+IOS：bridge.callHandler('removeVar', {'key':key}, function (response) {
+                log('JS got response', response)
+     })
+5.弹窗
+安卓：jsCall.showDialog(txt);
+IOS: bridge.callHandler('showMessage', {'message': txt}, function (response) {
+                        log('JS got response', response)
+                    })
+6.订单提交成功
+IOS:goPayPage----------调用支付页面
+
+安卓：jsCall.goPayPage
+6.传递订单号给H5（当点击立即购买的时候把定制数据发到后台，后台返回的订单号）
+IOS:写一个方法：GetorderID---------

@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/confirmOrder.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/zoom.js"></script>
+<script type="text/javascript" src="js/fnBase.js" ></script>
+<script type="text/javascript" src="js/productconfirmOrder.js" ></script>
+<title>拇指衣橱</title>
+</head>
+<body style="display:none;">
+<div class="headerCon" style="display:none;">
+    <div class="goBack"><a href="javascript:history.go(-1)"></a></div>
+    <div class="centerTxt">我的订单</div>
+    <div class="rightContent"></div>
+</div>
+
+<div id="orderbCon">
+<div class="addCon">
+    <div class="innerCon">
+      <div class="leftIco">
+      </div>
+      <div class="rightTxtCon">
+        <p class="shr"><span></span><span style="float:right;"></span></p>
+        <p class="shdz"></p>
+      </div>
+    </div>
+    
+    <div class="noAdd">
+     +添加收货地址
+    </div>
+</div>
+<div class="fenge"></div>
+<div id="proList">
+<!--<div class="ordercontent">
+        <div class="imgCon"><img  src="test/8.png"/></div>
+        <div class="txtCon">
+            <p class="proName">dfasf</p>
+            <p class="shuxing">dfas</p>
+            <p class="shuxing">dafsdfd</p>
+            <p class="price">
+                <span class="proPrice"></span>
+               <span class="hyPrice">会员价</span>
+                <span class="hyPriceNumber">￥358</span>
+                <span class="num"></span>
+            </p>
+        </div>
+       <div style="clear:both;"></div>
+</div>-->
+
+
+</div>
+
+<div class="fpInfo">发票信息<span>无需发票</span></div>
+<div class="fenge"></div>
+
+<div class="numCon" style="display:none;">
+    <div class="innerCon">
+        <p class="labelTxt">数量</p>
+        <div class="controlCon">
+            <div class="jianCon"></div>
+            <input value="2" disabled/>
+            <div class="jiaCon"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bz">
+     <div class="innerCon">
+            <p class="labelTxt">备注</p>
+            <textarea id="bzCon"></textarea>
+     </div>
+</div>
+
+<ul class="sp">
+  <li>
+   <span class="lLabel">商品总额</span>
+   <span class="rPrice"></span>
+  </li>
+</ul>
+
+<p class="totalCon">商品总价：<span id="priceTotal"></span>元</p>
+<p class="totalCon">运费：<span id="yf" style="color:#b9a05d;"></span>元</p>
+<p class="totalCon">实付款价格：<span id="sj" style="color:#b9a05d;"></span>元</p>
+<!--<p class="date">下单时间：2016-05-21 16:32</p>-->
+<div class="fenge"></div>
+
+</div>
+<div class="jiesuan">
+<p id="jiesuanBtn">确认订单</p>
+<p id="zongjia"></p>
+</div>
+
+<div id="block40">
+</div>
+<div id="alertArea">
+<p class="title">请选择量体方式</p>
+<ul>
+<li>
+<img src="images/clico1.png"/>
+<p class="mc">预约量体</p>
+</li>
+<li><img src="images/clico2.png"/>
+<p class="mc">历史数据</p>
+</li>
+<li><img src="images/clico3.png"/>
+<p class="mc">标准尺码</p>
+</li>
+</ul>
+<div id="closeBtn"></div>
+
+</div>
+
+
+
+ <div id="mengban"></div>
+      <div id="memberCon">
+       <div id="mycloseBtn"></div>
+       <div class="imgCon"></div>
+       <p class="txt" style="font-size:20px;text-align:left;color:#666;">1、一次性充值9800元即可成为会员，享受会员价</p>
+       <p class="txt" style="font-size:20px;text-align:left;color:#666;">2、累计充值9800元即可成为会员，享受会员价</p>
+       <p class="txt">亲你还需充值<span id="haixu"></span>元即可成为会员</p>
+      <p class="txt">享受<span id="memp"></span>元会员价</p>
+       <p class="hyBtn">现在就去充值</p>
+      </div>
+
+
+
+</body>
+</html>

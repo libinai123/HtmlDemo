@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/set.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				flag = true;
+				$('#kgBtn').click(
+					function(){
+						if(flag==false){
+							$('#kgBtn').addClass('off').removeClass('on');
+							flag=true;
+							return false;
+						}else {
+							$('#kgBtn').addClass('on').removeClass('off');
+							flag=false;
+							return false;
+						}
+					}
+				);
+			})
+		</script>
+        <script type="text/javascript" src="js/fnBase.js"></script>
+        <script type="text/javascript" src="js/set.js"></script>
+	</head>
+	<body style="display: none;">
+		<ul class="setList1">
+		<!--	<li><a href="javascript:;">通知<span id="kgBtn" class="off"></span></a></li>-->
+			<li><a href="xgPass.html">修改密码</a></li>
+			<li><a href="manageAddress.html">地址管理</a></li>
+			<!--<li><a href="javascript:;">清理缓存</a></li>-->
+		</ul>
+		<!--<ul class="setList2">
+			<li><a href="javascript:;">通知</a></li>
+			<li><a href="javascript:;">修改密码</a></li>
+			<li><a href="javascript:;">地址管理</a></li>
+			<li><a href="javascript:;">清理缓存</a></li>
+		</ul>-->
+		<p class="confirmBtn">退出登录</p>
+	</body>
+</html>

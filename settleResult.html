@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/settleResult.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/zoom.js"></script>
+	<script type="text/javascript" src="js/autoZoomLoadImage.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			//列表图片适配
+			$(".matching-list img").autoZoomLoadImage(true, 253, 253);
+		})
+	</script>
+	<style type="text/css">
+		.matching-list a {
+				height: 434px;
+			}
+			.time{
+				font-size: 22px;
+			}
+			.clock-icon {
+				width: 26px;
+				height: 26px;
+				background: url(images/clock-icon.png) no-repeat;
+				display: inline-block;
+				margin: 0px 8px -5px 0px;
+			}
+	</style>
+</head>
+<body>
+	<!-- <div class="headerCon">
+	    <div class="goBack"><a href="javascript:history.go(-1)"></a></div>
+	    <div class="centerTxt">商品详情</div>
+	    <div class="rightContent"></div>
+	</div> -->
+	<DIV class="settle">
+		<div class="settleSucc settleCon">
+			<p></p>
+			<p>恭喜您已支付成功</p>
+			<a href="javascript:;" class="shareBtn">分享订单</a>
+		</div>
+		<div class="settleFail settleCon" style="display: none">
+			<p></p>
+			<p>啊哦！由于网络原因，支付失败</p>
+			<a href="javascript:;" class="shareBtn">重新购买</a>
+		</div>
+		<p class="caiLike">猜你喜欢</p>
+		<ul class="matching-list">
+			<li>
+				<a href="#">
+					<img src="test/10.png" />
+					<p class="title">商务蓝色条纹 </p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="test/10.png" />
+					<p class="title">商务蓝色条纹 </p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+		</ul>
+	</DIV>
+</body>
+</html>

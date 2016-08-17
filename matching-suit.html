@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>形象搭配 - 套装</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/matching.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/autoZoomLoadImage.js"></script>		
+		<style type="text/css">
+			.adv {
+				position: relative;
+			}			
+			.adv-close {
+				background-color: #828486;
+				border-radius: 40px;
+				font-family: arial;
+				font-size: 30px;
+				height: 30px;
+				line-height: 30px;
+				position: absolute;
+				right: 10px;
+				text-align: center;
+				top: 10px;
+				width: 30px;
+				z-index: 10;
+				transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				//列表图片适配
+				$(".matching-list img").autoZoomLoadImage(true, 253, 253);
+				$(".adv img").autoZoomLoadImage(true, 640, 140);
+				//广告
+				$(".adv .adv-close").on("click",function(){
+					var $adv = $(this).parent();
+					$adv.fadeOut(function(){
+						$adv.remove();
+					});					
+				});
+			})
+		</script>
+	</head>
+
+	<body style="display: none;">
+		<div class="adv">
+			<div class="adv-close">+</div>
+			<img src="test/adv01.png" />
+		</div>
+		<ul class="matching-list">
+			<li>
+				<a href="#">
+					<img src="test/10.png" />
+					<p class="title">商务蓝色条纹 </p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="test/9.png" />
+					<p class="title">商务蓝色条纹 毛西装</p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="test/10.png" />
+					<p class="title">商务蓝色条纹 </p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="test/8.png" />
+					<p class="title">商务蓝色条纹 </p>
+					<p class="price">￥528.0</p>
+					<p class="price colorb9a05d"><span>会员价</span> 480.0</p>
+				</a>
+			</li>
+		</ul>
+	</body>
+
+</html>

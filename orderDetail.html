@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/confirmOrder.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/zoom.js"></script>
+<script type="text/javascript" src="js/fnBase.js" ></script>
+
+<title>拇指衣橱</title>
+</head>
+<body style="display:none;">
+<div class="headerCon" >
+    <div class="goBack"><a href="javascript:history.go(-1)"></a></div>
+    <div class="centerTxt">订单详情</div>
+    <div class="rightContent"></div>
+</div>
+
+<div class="orderDetailCon">
+<div class="orderNumber">
+ <p class="oerderTxt">订单编号：45452522224<span class="zhuangtai">待付款</span></p>
+</div>
+
+<div class="myaddress">
+<p class="mynameAndPhone">赵晓阳  18291886058</p>
+<p class="mydeatilAddress">陕西省西安市临潼区 大方的身份</p>
+</div>
+
+
+<div id="proList">
+<div class="ordercontent">
+        <div class="imgCon"><img src="images/orderimg.jpg"/></div>
+        <div class="txtCon">
+            <p class="proName">衬衣衬衣衬衣衬衣</p>
+            <p class="shuxing">衬衣衬衣</p>
+            <p class="shuxing">衬衣衬衣衬衣</p>
+            <p class="price">
+                <span id="proPrice"></span>
+               <!-- <span class="hyPrice">会员价</span>-->
+                <span class="hyPriceNumber">￥358</span>
+                <span class="num">×1</span>
+            </p>
+        </div>
+       <div style="clear:both;"></div>
+</div>
+</div>
+<div class="fenge"></div>
+
+<div class="numCon" style="display:none;">
+    <div class="innerCon">
+        <p class="labelTxt">数量</p>
+        <div class="controlCon">
+            <div class="jianCon"></div>
+            <input value="2" disabled/>
+            <div class="jiaCon"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bz">
+     <div class="innerCon">
+            <p class="labelTxt">备注</p>
+            <textarea id="bzCon" disabled></textarea>
+     </div>
+</div>
+
+<ul class="sp">
+  <li>
+   <span class="lLabel">商品总额</span>
+   <span class="rPrice">￥3224</span>
+  </li>
+</ul>
+
+<p class="totalCon">共<span id="numTotal">1</span>件商品  合计    <span id="priceTotal">213</span>元</p>
+<p class="date">下单时间：2016-05-21 16:32</p>
+<div class="fenge"></div>
+
+</div>
+<div class="jiesuan">
+ <div class="rightBtnArea">
+    <a href="javascript:void(0)" class="b_color">立即付款</a>
+    <a href="javascript:void(0)" class="n_color">取消订单</a>
+ </div>
+</div>
+
+</body>
+</html>

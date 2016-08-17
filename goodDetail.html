@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/goodDetail.css" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/fastclick.js" ></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js" ></script>
+		<script type="text/javascript" src="js/autoZoomLoadImage.js" ></script>
+        <script type="text/javascript" src="js/fnBase.js" ></script>    
+        <script type="text/javascript" src="js/goodDetail.js" ></script>
+        <script>
+        FastClick.attach(document.body);
+        </script>
+	</head>
+	<body style="display:none;">
+		<!-- <div class="headerCon">
+		    <div class="goBack"><a href="javascript:history.go(-1)"></a></div>
+		    <div class="centerTxt">商品详情</div>
+		    <div class="rightContent"></div>
+		</div> -->
+		<!--轮播-->
+        
+        <div style="position:absolute;top:0;bottom:100px;width:640px;overflow-y:auto;">
+        
+        
+		<div class="slideBox" id="slideBox">
+			<div class="hd">
+				<ul>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<!--<li><img src="images/sdImg.jpg"/></li>
+					<li><img src="images/sdImg.jpg"/></li>
+					<li><img src="images/sdImg.jpg"/></li>-->
+				</ul>
+			</div>
+		</div>
+		<!--轮播-->
+		<div class="goodName fl">
+			<p id="pName"></p>
+			<p><span id="pPrice"></span><span>会员价</span><span id="vipPrice"></span><div style="clear:both;"></div></p>
+            <p id="deliCon"></p>
+		</div>
+		<div class="fr goodLove">
+			<div class="line"></div>
+		</div>
+        <div style="clear:both;"></div>
+		<p class="activeTime" style="display:none;">dasfdfa</p>
+		<!--已经选择的商品信息-->
+		<div class="goodReady">
+			<!--<span>已选择:</span><span>“双排藏蓝”</span><span>“165/84A(S)”</span>-->
+            <span>点击选择规格</span>
+		</div>
+		<!--商品评价-->
+		<div class="goodElv">
+			<p class="elvTitle"></p>
+			<ul class="elvList">
+			<!--	<li>
+					<img src="images/1.jpg" class="pjTx fl" />
+					<p class="fl pjName">执笔画素描</p>
+					<em class="fl pjLev"></em>
+					<div style="clear:both;"></div>
+					<p class="elvCon">
+衣服质量不错，穿起来舒服，是我喜欢的款式，合身帅气，做工及线路都不错，大力推荐！
+					</p>
+					<p class="elvTime"><span>2016年3月12日</span><span>颜色:蓝色</span><span>尺码:40码</span></p>
+				</li>-->
+				
+			</ul>
+			<!--<p class="clickMore">加载更多<em></em></p>-->
+		</div>
+		<!--细节展示-->
+		<div class="deShow">
+			<p class="showTitle"></p>
+			<div class="goodList">
+			<!--<img src="images/sdImg.jpg" />
+			<img src="images/sdImg.jpg" />-->
+			</div>
+		</div>
+		<!--商品推荐-->
+		<div class="recom">
+			<p class="reTitle"></p>
+			<ul class="reList">
+				<!--<li><a href="javascript:;">
+					<p>男士休闲袜</p>
+					<p>129</p>
+					<div class="ver_pic">
+						<div class="suppic">
+							<img src="images/sdImg.jpg" class="rocImg" />
+						</div>
+					</div>
+				</a></li>
+				<div style="clear:both;"></div>-->
+			</ul>
+		</div>
+		<!--颜色和尺码选择-->
+		<div class="choseDia">
+			<div class="choseList">
+            
+                <div id="attrSelectArea"> 
+                  <!--  <p class="size">颜色<em></em></p>
+                    <ul class="choseCon choseCon1">
+                        <li class="active">双排藏蓝</li>
+                        <li>单口深蓝</li>
+                        <li>单扣黑色</li>
+                        <li>双扣灰色</li>
+                        <li>时尚卡红</li>
+                        <div style="clear:both;"></div>
+                    </ul>
+                    <p class="size">尺码</p>
+                    <ul class="choseCon choseCon2">
+                        <li class="active">165/84A(S)</li>
+                        <li>170/88A(M)</li>
+                        <li>175/92A(L)</li>
+                        <li>180/96A(XL)</li>
+                        <li>185/100A(XXL)</li>
+                        <div style="clear:both;"></div>
+                    </ul>-->
+                
+                </div>   
+                
+				<div class="buyNum">
+					<p class="fl">购买数量</p>
+					<div class="fr">
+						<button class="fl increse"></button><input disabled type="text" value="1" class="fl NumValue" id="slTxt"/><button class="fl add"></button><div style="clear:both;"></div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 颜色和尺码选择 -->
+		<!-- 底部的购买按钮 -->
+        
+        </div>
+        
+		<div class="bottomBtn">
+			<ul>
+				<li>
+				 <div class="fenxiang">
+                   <p></p>
+                   <p>分享</p>
+                 </div>	
+                
+				</li>
+				<li class="lijigoumai">
+					立即购买
+				</li>
+			</ul>
+		</div>
+		<!-- 底部的购买按钮 -->
+
+
+
+
+
+
+
+
+	</body>
+</html>

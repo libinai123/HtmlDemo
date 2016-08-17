@@ -1,0 +1,7 @@
+refundList.html 是售后列表
+refundDeal.html 是退款退货等一系列的页面，此处底部的箭头图片是单独显示的，在进行显示和隐藏的要把这块也进行另外设置
+sethtml 个人中心的设置
+xgPass.html 个人中心修改密码
+about.html 个人中心关于我们
+fk.html 个人中心反馈页面
+intro.html 个人中心的公司介绍
